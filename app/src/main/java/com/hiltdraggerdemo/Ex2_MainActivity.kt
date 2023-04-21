@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.activity.viewModels
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 
 @AndroidEntryPoint
@@ -14,6 +15,8 @@ class Ex2_MainActivity : AppCompatActivity() {
     private val myViewModel: Ex2_MyViewModel by viewModels()
     private lateinit var btnNewScreen : Button
     private lateinit var btnUpdateData : Button
+    @Inject
+    lateinit var std: Student
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,7 +29,7 @@ class Ex2_MainActivity : AppCompatActivity() {
         }
         tvMsg.setText(myViewModel.getEmpName())
         myViewModel.getData().observe(this, {
-            tvMsg.setText(myViewModel.getEmpName() + it)
+            tvMsg.setText(myViewModel.getEmpName() + it+" ==> Student Name is0 "+std.getName())
         })
         btnNewScreen.setOnClickListener {
             getSupportFragmentManager()
