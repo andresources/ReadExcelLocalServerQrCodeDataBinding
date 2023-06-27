@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggg"
+    tools:context=".activities.CardetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/ad"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="right"
+            android:background="@drawable/trans"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <TextView
+                android:id="@+id/tv_add_work"
+                android:text="Add Car"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:paddingTop="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/image_add"
+                android:layout_alignRight="@+id/tv_add_work"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_action_name"
+                android:layout_width="@dimen/_27sdp"
+                android:layout_height="@dimen/_27sdp"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+
+
+</LinearLayout>

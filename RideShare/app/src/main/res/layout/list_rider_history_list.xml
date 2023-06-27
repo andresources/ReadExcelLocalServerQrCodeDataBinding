@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd_search_ride"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/_3sdp"
+        app:cardCornerRadius="@dimen/_1sdp"
+        android:layout_margin="@dimen/_4sdp"
+        app:cardBackgroundColor="#fff"
+        android:padding="20dp"
+        app:cardMaxElevation="@dimen/_3sdp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvFrom"
+                android:text="Name"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="#000"
+                android:fontFamily="@font/poppinsmedium"
+                android:textSize="@dimen/_12sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tvTo"
+                android:text="To"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_5ssp"
+                android:textColor="#000"
+                android:fontFamily="@font/poppinsmedium"
+                android:textSize="@dimen/_12sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tvAmount"
+                android:text="Amount"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_5ssp"
+                android:textColor="#000"
+                android:fontFamily="@font/poppinsmedium"
+                android:textSize="@dimen/_12sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:text="Date"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_5ssp"
+                android:textColor="#000"
+                android:fontFamily="@font/poppinsmedium"
+                android:textSize="@dimen/_12sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:text="Time"
+
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_5ssp"
+                android:textColor="#000"
+                android:fontFamily="@font/poppinsmedium"
+                android:textSize="@dimen/_12sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+            <Button
+                android:id="@+id/btnratenow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Give Rating">
+
+            </Button>
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

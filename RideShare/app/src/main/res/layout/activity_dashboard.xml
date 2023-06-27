@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bggg"
+    tools:context=".activities.DashboardActivity">
+
+    <Button
+        android:id="@+id/btnDriver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:drawableTop="@drawable/ic_driver"
+        android:textSize="16dp"
+        android:background="@drawable/trans"
+        android:padding="18dp"
+        android:text="Driver"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:drawableTop="@drawable/ic_baseline_person_pin_24"
+        android:background="@drawable/trans"
+        android:padding="18dp"
+        android:textSize="16dp"
+        android:text="Passenger (Student)"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+</LinearLayout>

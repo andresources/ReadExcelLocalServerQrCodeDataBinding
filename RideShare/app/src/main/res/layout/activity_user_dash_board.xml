@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".activities.MainActivity">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnDriver"
+                    android:text="Driver"
+                    android:layout_weight="1"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/button1_rounded"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+                <View
+                    android:layout_marginTop="15dp"
+                    android:background="#000"
+                    android:layout_width="@dimen/_3sdp"
+                    android:layout_height="match_parent"/>
+
+                <Button
+                    android:id="@+id/btnStudent"
+                    android:text="Student"
+                    android:layout_weight="1"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/button1_rounded"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addTrip"
+                android:layout_below="@+id/ll"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <TextView
+                    android:text="From"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/spinFrom"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:padding="@dimen/_8sdp"
+                    android:background="@drawable/edittext_reg_fields"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/from"
+                    android:scrollbars="none"
+                    android:spinnerMode="dropdown"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvFromLoc"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/btnFromLoc"
+                        android:textColor="#000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_reg_fields"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:padding="@dimen/_8sdp"
+                        android:text="Get Loc" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_to"
+                    android:text="To"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#111111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/SpinTo"
+                    android:visibility="gone"
+                    android:singleLine="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:padding="@dimen/_8sdp"
+                    android:background="@drawable/edittext_reg_fields"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/to"
+                    android:scrollbars="none"
+                    android:spinnerMode="dropdown"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvEndLoc"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/btnEndLoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Get Loc"
+                        android:padding="@dimen/_8sdp"
+
+                        android:layout_marginRight="@dimen/_5sdp"
+
+                        android:background="@drawable/edittext_reg_fields"
+                       />
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:text="Type of Vehicle"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <Spinner
+                    android:id="@+id/spinTypeofVehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_4sdp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/edittext_reg_fields"
+                    android:scrollbars="none"
+                    android:singleLine="true"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:id="@+id/tv_no_of_seats"
+                    android:text="Number Of Seats"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="left"
+
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#111111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <EditText
+                    android:id="@+id/et_no_of_seats"
+                    android:hint="Number Of Seats"
+                    android:singleLine="true"
+                    android:padding="9dp"
+                    android:inputType="number"
+                    android:background="@drawable/edittext_reg_fields"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_datee"
+                    android:text="Date"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#111111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:hint="Date"
+                    android:singleLine="true"
+                    android:padding="9dp"
+                    android:background="@drawable/edittext_reg_fields"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/tv_timeee"
+                    android:text="Time"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#111111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:hint="Time"
+                    android:singleLine="true"
+                    android:padding="9dp"
+                    android:background="@drawable/edittext_reg_fields"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_amount"
+                    android:text="Amount"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#111111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <EditText
+                    android:id="@+id/et_amount"
+                    android:hint="Amount"
+                    android:singleLine="true"
+                    android:padding="9dp"
+                    android:background="@drawable/edittext_reg_fields"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <Button
+                    android:id="@+id/btn_post"
+                    android:text="Post"
+                    android:padding="18dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:background="@drawable/trans"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/driver_nav"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        android:id="@+id/nv">
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+

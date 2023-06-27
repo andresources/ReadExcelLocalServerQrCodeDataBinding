@@ -2,8 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Autorox-Android-3.0/Autorox-Android-3.0" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Dagger-Hilt-MVVM" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/KoinDIFrameworkDemo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/KotlinHiltDraggerDemo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Quiz-Expresso" vcs="Git" />
   </component>
 </project>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/am"
+        android:visibility="gone"
+        android:layout_width="300dp"
+        android:layout_height="200dp" />
+
+    <ImageView
+        android:layout_marginTop="130dp"
+        android:id="@+id/img"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:layout_width="300dp"
+
+        android:layout_height="200dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="#f4b543"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:text="Student Ride SHARE"/>
+
+
+</LinearLayout>

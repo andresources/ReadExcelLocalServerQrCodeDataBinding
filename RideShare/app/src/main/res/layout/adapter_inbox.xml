@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd_search_ride"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true">
+        <TextView
+
+            android:text="Location"
+            android:fontFamily="@font/poppinsmedium"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="#000"
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tvFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="From"
+                android:textColor="#000" />
+
+
+            <TextView
+                android:id="@+id/tvTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="To"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvFrom"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_5ssp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Date"
+                android:textColor="#000" />
+
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDate"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_5ssp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Time"
+                android:textColor="#000" />
+
+
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTime"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_5ssp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Amount"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAmount"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_5ssp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Message"
+                android:textColor="#000" />
+
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMessage"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_5ssp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Status"
+                android:textColor="#000" />
+            <TextView
+                android:id="@+id/us"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_5ssp"
+                android:layout_below="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:text="Update Status"
+                android:layout_height="wrap_content"/>
+<Spinner
+    android:layout_below="@+id/us"
+    android:id="@+id/spStatus"
+    android:layout_marginLeft="@dimen/_13sdp"
+    android:layout_marginTop="@dimen/_5ssp"
+    android:entries="@array/status"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/spStatus"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@drawable/button1_rounded"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Submit"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/btnConfirmed"
+                android:visibility="gone"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tvStatus"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@drawable/button1_rounded"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Confirmed"
+                android:textAllCaps="false" />
+
+
+            <Button
+                android:id="@+id/btnReject"
+                android:visibility="gone"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tvStatus"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@drawable/button1_rounded"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Reject"
+                android:textAllCaps="false" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">RideShare</string>
+
+    <string-array name="login">
+        <item>Select Role</item>
+        <item>Driver</item>
+        <item>Admin</item>
+    </string-array>
+
+    <string-array name="CarBrand">
+        <item>Select Car Brand</item>
+        <item>Honda</item>
+        <item>Hyundai</item>
+        <item>Toyota</item>
+        <item>Supra</item>
+        <item>BMW</item>
+        <item>Benz</item>
+        <item>Audi</item>
+        <item>Jaguar</item>
+    </string-array>
+
+
+
+
+    <string-array name="status">
+        <item>Select Status</item>
+        <item>Reject</item>
+        <item>Confirmed</item>
+        <item>Completed</item>
+    </string-array>
+
+    <string-array name="from">
+        <item>Select From</item>
+        <item>Snowdon</item>
+        <item>plamondon</item>
+        <item>namur</item>
+        <item>mcgill</item>
+        <item>peel</item>
+        <item>parc</item>
+        <item>cremazie</item>
+        <item>lasalle</item>
+        <item>jarry</item>
+    </string-array>
+
+    <string-array name="to">
+        <item>Choose To</item>
+        <item>Snowdon</item>
+        <item>plamondon</item>
+        <item>namur</item>
+        <item>mcgill</item>
+        <item>peel</item>
+        <item>parc</item>
+        <item>cremazie</item>
+        <item>lasalle</item>
+        <item>jarry</item>
+    </string-array>
+
+    <string-array name="noOfSeats">
+        <item>No Of Seats</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="carColour">
+        <item>Choose Car Colour</item>
+        <item>Red</item>
+        <item>White</item>
+        <item>Blue</item>
+    </string-array>
+
+
+    <string name="Open">Open navigation drawer</string>
+    <string name="Close">Close navigation drawer</string>
+
+    <string name="upload_image">UPLOAD IMAGE</string>
+
+    <string name="read_file">This app needs access to your file storage so that it can read photos.</string>
+    <string name="title_activity_user_inbox">UserInboxActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+<!--    <string name="google_maps_key">AIzaSyCmS-BJK2EHOeitt-WpwZYKHDAlKVqUP1g</string>-->
+
+    <string name="google_maps_key">AIzaSyD6-gAHNFxw8h68dHMPpK6A9XuUrDmMyHY</string>
+
+
+
+
+
+    <string name="title_activity_maps_loc">MapsLocActivity</string>
+    <string name="title_activity_maps2">Map</string>
+
+
+</resources>
