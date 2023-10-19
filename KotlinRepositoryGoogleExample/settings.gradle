@@ -12,6 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "HiltDraggerDemo"
-include ':app'
+rootProject.name = "RepositoryPatternGoogleDemo"
 include ':app'
